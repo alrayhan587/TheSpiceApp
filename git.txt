@@ -1,3 +1,4 @@
-git remote add origin https://github.com/alrayhan587/SpiceApp.git
+git remote remove origin
+git remote add origin https://github.com/alrayhan587/TheSpiceApp.git
 git branch -M main
 git push -u origin main
