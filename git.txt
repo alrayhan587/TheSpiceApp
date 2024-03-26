@@ -1,4 +1,6 @@
-git remote remove origin
+ls
+git add .
+git commit -m "Update3time"
 git remote add origin https://github.com/alrayhan587/TheSpiceApp.git
 git branch -M main
 git push -u origin main

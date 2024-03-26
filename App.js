@@ -12,10 +12,10 @@ export class App extends Component {
       <View className="flex-1 justify-center items-center">
         {/* <WelcomeScreen></WelcomeScreen> */}
         {/* <LoginScreen1></LoginScreen1> */}
-        {/* <HomeScreen></HomeScreen> */}
+        <HomeScreen></HomeScreen>
         {/* <SignUpScreen></SignUpScreen> */}
 
-        <Text>Hello World</Text>
+        
 
       </View>
     )
