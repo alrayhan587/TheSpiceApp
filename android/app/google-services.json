@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "652613081323",
+    "project_id": "languageapp-3bb7f",
+    "storage_bucket": "languageapp-3bb7f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:652613081323:android:cec1b940b0b8627a6906ae",
+        "android_client_info": {
+          "package_name": "com.spicebee"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3OUE3BbpWAlj1Bu8_mGRkrAndcbTlvAQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
