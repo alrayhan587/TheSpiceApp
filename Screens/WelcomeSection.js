@@ -2,11 +2,9 @@ import { Text, View, TouchableOpacity, Image } from 'react-native'
 import React, { Component } from 'react'
 import { SafeAreaView } from 'react-native-safe-area-context'
 
-export class WelcomeScreen extends Component {
-    render() {
-        return (
-
-            <SafeAreaView className="flex-1">
+const WelcomeSection = () => {
+  return (
+    <SafeAreaView className="flex-1">
                 <View className="flex-1 flex justify-around my-4">
 
                     <View>
@@ -37,9 +35,7 @@ export class WelcomeScreen extends Component {
                     </View>
                 </View>
             </SafeAreaView>
-
-        )
-    }
+  )
 }
 
-export default WelcomeScreen
+export default WelcomeSection;

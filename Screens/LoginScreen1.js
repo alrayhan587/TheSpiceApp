@@ -4,12 +4,14 @@ import { SafeAreaView } from 'react-native-safe-area-context'
 import auth from '@react-native-firebase/auth';
 // import { Ionicons } from 'react-native-vector-icons/Ionicons';
 import Icon from 'react-native-vector-icons/FontAwesome';
+import { useNavigation } from '@react-navigation/native';
 
 
-export default function () {
+const LoginScreen1 = () => {
 
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const navigation = useNavigation();
     const userSignIn = () => {
         auth()
             .signInWithEmailAndPassword(email, password)
@@ -22,6 +24,10 @@ export default function () {
             });
     }
 
+    const handleLoginPress = () => {
+        userSignIn();
+        navigation.navigate('Root');
+    }
     return (
         <View className="flex-1 w-full">
             <SafeAreaView className="flex">
@@ -29,7 +35,7 @@ export default function () {
                     <TouchableOpacity
                         // onPress={() => navigation.goBack()} 
                         className="bg-gray-300 p-2 rounded-tr-2xl rounded-bl-2xl ml-4">
-                            <Icon name='angle-left' size={25} color={'black'}></Icon>
+                        <Icon name='angle-left' size={25} color={'black'}></Icon>
                     </TouchableOpacity>
                 </View>
 
@@ -62,7 +68,7 @@ export default function () {
                     </TouchableOpacity>
 
                     <TouchableOpacity className="py-4 bg-rose-400 rounded-xl mb-3"
-                        onPress={() => { userSignIn(); }}
+                        onPress={handleLoginPress}
                     >
                         <Text className="font-bold text-center text-white ">Login</Text>
                     </TouchableOpacity>
@@ -94,3 +100,6 @@ export default function () {
         </View>
     )
 }
+
+
+export default LoginScreen1
