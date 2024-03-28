@@ -22,14 +22,17 @@ const Tab_navigation = () => {
                     tabBarActiveTintColor: "black",
                     tabBarInactiveTintColor: "gray",
                     tabBarStyle: {
-                        height: 60,
+                        height: 50,
                         position: 'absolute',
-                        bottom: 16,
-                        left: 16,
-                        right: 16,
-                        borderRadius: 16
-                    }
-
+                        bottom: 10,
+                        left: 20,
+                        right: 20,
+                        borderRadius: 16,
+                        elevation: 0,
+                        // borderWidth:0,
+                        borderBottomWidth: 0,
+                        borderTopWidth: 0,
+                    },
                 }}
             >
                 <Tab.Screen name="Home" options={{ headerShown: false, tabBarIcon: ({ color, size, focused }) => (<Icon name={focused ? "home-sharp" : "home-outline"} size={focused ? 35 : 28} color={focused ? "#fb7185" : "black"} />) }} component={HomeScreen} />
