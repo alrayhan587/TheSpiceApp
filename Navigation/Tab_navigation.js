@@ -22,8 +22,8 @@ const Tab_navigation = () => {
                     tabBarActiveTintColor: "black",
                     tabBarInactiveTintColor: "gray",
                     tabBarStyle: {
-                        height: 50,
-                        position: 'absolute',
+                        // height: 40,
+                        position: 'relative',
                         bottom: 10,
                         left: 20,
                         right: 20,
@@ -32,6 +32,7 @@ const Tab_navigation = () => {
                         // borderWidth:0,
                         borderBottomWidth: 0,
                         borderTopWidth: 0,
+                        backgroundColor: 'rgba(0,0,0,0)',
                     },
                 }}
             >

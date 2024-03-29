@@ -1,12 +1,47 @@
-import { View, Text,Image } from 'react-native'
-import React from 'react'
+/* eslint-disable no-shadow */
+import { View, Text, Image } from 'react-native'
+import React, { useState, useCallback, useEffect } from 'react'
+import { GiftedChat } from 'react-native-gifted-chat'
+
+
+
 
 const ConversationScreen = () => {
+  const botAvatar = require('./Assets/bot-icon.webp')
+  const [messages, setMessages] = useState([])
+
+  useEffect(() => {
+    setMessages([
+      {
+        _id: 1,
+        text: 'Hello developer',
+        createdAt: new Date(),
+        user: {
+          _id: 2,
+          name: 'React Native',
+          avatar: botAvatar,
+        },
+      },
+    ])
+  }, [])
+
+  const onSend = useCallback((messages = []) => {
+    setMessages(previousMessages =>
+      GiftedChat.append(previousMessages, messages),
+    )
+  }, [])
+
+  const onQuickReply=()=>{}
+
   return (
-    <View className="flex-1 justify-center items-center bg-white">
-      <Text>ConversationScreen</Text>
-      <Image source={require('./Assets/Learninglanguagescuate.png')} style={{ width: 300, height: 300 }} />
-    </View>
+    <GiftedChat
+      messages={messages}
+      onSend={messages => onSend(messages)}
+      onQuickReply={(quickReply) => this.onQuickReply(quickReply)}
+      user={{
+        _id: 1,
+      }}
+    />
   )
 }
 
