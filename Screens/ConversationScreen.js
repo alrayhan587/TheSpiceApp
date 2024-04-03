@@ -5,7 +5,7 @@ import { GiftedChat } from 'react-native-gifted-chat'
 import { Dialogflow_V2 } from "react-native-dialogflow"
 import { dialogflowConfig } from '../env'
 
-const botAvatar = require('./Assets/bot-icon.webp')
+const botAvatar = require('./Assets/Robonosuke2.png')
 
 
 const Bot = {
@@ -46,9 +46,10 @@ class ConversationScreen extends Component {
     );
   }
 
+ 
+
   handleGoogleResponse(result) {
     let text = result.queryResult.fulfillmentMessages[0].text.text[0];
-
     this.sendBotResponse(text);
   }
 
