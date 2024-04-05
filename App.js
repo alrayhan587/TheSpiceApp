@@ -10,8 +10,9 @@ const App = () => {
   return (
     // <App_navigation></App_navigation>
     <ConversationScreen></ConversationScreen>
-    // <ConversationListScreen></ConversationListScreen>
     
+    // <ConversationListScreen></ConversationListScreen>
+
     // <View>
     //   <Text>Hello World</Text>
     // </View>
