@@ -1,0 +1,28 @@
+[
+    {
+      "id": 1,
+      "name": "Asking for Directions",
+      "image": "directions.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Asking for WiFi Password",
+      "image": "wifi_password.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Talking about Your Daily Routine",
+      "image": "daily_routine.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Proposing Without Saying 'I Love You'",
+      "image": "proposal.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Planning a Party",
+      "image": "party_planning.jpg"
+    }
+  ]
+  

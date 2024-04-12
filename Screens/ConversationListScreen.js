@@ -1,14 +1,25 @@
-import { Text, View } from 'react-native'
-import React, { Component } from 'react'
+import { View, Text } from 'react-native'
+import React from 'react'
+import { useState } from 'react'
+import { useEffect } from 'react';
+import myData from './Constant.json'
 
-export class ConversationListScreen extends Component {
-  render() {
-    return (
-      <View>
-        <Text>ConversationListScreen</Text>
-      </View>
-    )
-  }
+
+
+const ConversationListScreen = () => {
+
+  const [block, setBlock] = useState([]);
+  useEffect(() => {
+    setBlock(myData);
+  }, [])
+
+  console.log(myData);
+  return (
+    <View>
+      <Text>Data numbers : {block.length}</Text>
+
+    </View>
+  )
 }
 
 export default ConversationListScreen

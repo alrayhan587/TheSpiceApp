@@ -2,8 +2,8 @@
 import { View, Text, Image } from 'react-native'
 import React, { useState, useCallback, useEffect, Component } from 'react'
 import { GiftedChat } from 'react-native-gifted-chat'
-import { Dialogflow_V2 } from "react-native-dialogflow"
-import { dialogflowConfig } from '../env'
+// import { Dialogflow_V2 } from "react-native-dialogflow"
+// import { dialogflowConfig } from '../env'
 
 const botAvatar = require('./Assets/Robonosuke2.png')
 
