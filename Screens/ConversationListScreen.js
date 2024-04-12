@@ -1,8 +1,9 @@
-import { View, Text } from 'react-native'
+import { View, Text,ScrollView } from 'react-native'
 import React from 'react'
 import { useState } from 'react'
 import { useEffect } from 'react';
 import myData from './Constant.json'
+import Conversations from './Conversations';
 
 
 
@@ -13,12 +14,15 @@ const ConversationListScreen = () => {
     setBlock(myData);
   }, [])
 
-  console.log(myData);
+  // console.log(myData);
   return (
-    <View>
+    <ScrollView>
       <Text>Data numbers : {block.length}</Text>
+      <View>{block.map(blo => <Conversations key={blo.id} block={blo}></Conversations>)}</View>{block.map(blo => { <Conversations key={blo.id} block={blo}></Conversations> })}
 
-    </View>
+      <Text>More</Text>
+
+    </ScrollView>
   )
 }
 
