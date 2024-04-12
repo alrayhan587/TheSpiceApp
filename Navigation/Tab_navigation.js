@@ -7,6 +7,7 @@ import ConversationScreen from '../Screens/ConversationScreen';
 import LearningPath from '../Screens/LearningPath';
 import VideoScreen from '../Screens/VideoScreen';
 import Icon from 'react-native-vector-icons/Ionicons';
+import ConversationListScreen from '../Screens/ConversationListScreen';
 
 
 const Tab = createBottomTabNavigator();
@@ -22,7 +23,7 @@ const Tab_navigation = () => {
                     tabBarActiveTintColor: "black",
                     tabBarInactiveTintColor: "gray",
                     tabBarStyle: {
-                        // height: 40,
+                        height: 60,
                         position: 'relative',
                         bottom: 10,
                         left: 20,
@@ -37,7 +38,7 @@ const Tab_navigation = () => {
                 }}
             >
                 <Tab.Screen name="Home" options={{ headerShown: false, tabBarIcon: ({ color, size, focused }) => (<Icon name={focused ? "home-sharp" : "home-outline"} size={focused ? 35 : 28} color={focused ? "#fb7185" : "black"} />) }} component={HomeScreen} />
-                <Tab.Screen name="Conversation" options={{ headerShown: false, tabBarIcon: ({ color, size, focused }) => (<Icon name={focused ? "chatbubbles-sharp" : "chatbubbles-outline"} size={focused ? 35 : 28} color={focused ? "#fb7185" : "black"} />) }} component={ConversationScreen} />
+                <Tab.Screen name="Conversation" options={{ headerShown: false, tabBarIcon: ({ color, size, focused }) => (<Icon name={focused ? "chatbubbles-sharp" : "chatbubbles-outline"} size={focused ? 35 : 28} color={focused ? "#fb7185" : "black"} />) }} component={ConversationListScreen} />
                 <Tab.Screen name="Learning" options={{ headerShown: false, tabBarIcon: ({ color, size, focused }) => (<Icon name={focused ? "language-sharp" : "language-outline"} size={focused ? 35 : 28} color={focused ? "#fb7185" : "black"} />) }} component={LearningPath} />
                 <Tab.Screen name="Video" options={{ headerShown: false, tabBarIcon: ({ color, size, focused }) => (<Icon name={focused ? "play-circle-sharp" : "play-circle-outline"} size={focused ? 35 : 28} color={focused ? "#fb7185" : "black"} />) }} component={VideoScreen} />
             </Tab.Navigator>
