@@ -1,12 +1,30 @@
-import { View, Text,Image } from 'react-native'
-import React from 'react'
+import { View, Text,Image, ScrollView, TextInput, TouchableOpacity } from 'react-native'
+import React, { useEffect, useState } from 'react'
+import lessonData from './Lesson.json';
+import LessonsScreen from './LessonsScreen';
 
 const LearningPath = () => {
+
+  const [lessons, setLessons]=useState([]);
+  useEffect(()=>{
+    setLessons(lessonData);
+  },[])
+
   return (
-    <View className="flex-1 justify-center items-center bg-white">
-      <Text>LearningPath</Text>
-      <Image source={require('./Assets/Learninglanguages-amico.png')} style={{ width: 300, height: 300 }} />
-    </View>
+    <ScrollView> 
+
+      {/* For search button */}
+    
+    
+
+      {/* For lesson section */}
+      <View className="mt-5">
+        {/* <Text>LearningPath : {lessons.length}</Text> */}
+        <View>
+          {lessons.map(les=><LessonsScreen key={les.id} lessons={les}></LessonsScreen>)}
+        </View>
+      </View>
+    </ScrollView>
   )
 }
 

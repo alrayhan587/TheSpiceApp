@@ -1,0 +1,63 @@
+[
+  {
+    "id": 1,
+    "number": 1,
+    "name": "Greetings",
+    "icon": "texting",
+    "content": ["Hello", "How are you?", "I am fine."]
+  },
+  {
+    "id": 2,
+    "number": 2,
+    "name": "Introduction",
+    "icon": "handshake",
+    "content": ["Name", "Age", "Occupation"]
+  },
+  {
+    "id": 3,
+    "number": 3,
+    "name": "Basic Conversation",
+    "icon": "conversation",
+    "content": [
+      "Where are you from?",
+      "What do you like to do?",
+      "Do you have any hobbies?"
+    ]
+  },
+  {
+    "id": 4,
+    "number": 4,
+    "name": "Numbers",
+    "icon": "calculator",
+    "content": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]
+  },
+  {
+    "id": 5,
+    "number": 5,
+    "name": "Colors",
+    "icon": "palette",
+    "content": ["Red", "Blue", "Green", "Yellow", "Orange", "Purple"]
+  },
+  {
+    "id": 6,
+    "number": 6,
+    "name": "Days of the Week",
+    "icon": "calendar",
+    "content": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+      "Sunday"
+    ]
+  },
+  {
+    "id": 7,
+    "number": 7,
+    "name": "Weather",
+    "icon": "sun",
+    "content": ["Sunny", "Cloudy", "Rainy", "Windy", "Snowy"]
+  }
+]
