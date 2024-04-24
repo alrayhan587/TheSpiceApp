@@ -17,17 +17,14 @@ const GameScreen1 = () => {
             setVisibleButtons(prevState => {
                 const newState = [...prevState];
                 newState[index] = false; // Hide the clicked button
-                console.log(newState);
+                const allHidden = newState.every(visible => !visible); // Check if all buttons are hidden
+                if (allHidden) {
+                    Alert.alert("Process successful");
+                }
                 return newState;
             });
             console.log(visibleButtons);
             setCurrentObjectIndex(prevIndex => (prevIndex + 1) % objects.length); // Update the index to the next object
-
-
-            const allButtonsHidden = visibleButtons.every(visible => !visible);
-            if (allButtonsHidden) {
-                Alert.alert("Process successful");
-            }
 
         }
 
