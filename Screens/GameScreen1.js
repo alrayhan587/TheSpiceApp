@@ -1,4 +1,4 @@
-import { View, Text, TouchableOpacity } from 'react-native';
+import { View, Text, TouchableOpacity, Alert } from 'react-native';
 import React, { useState } from 'react'
 
 const GameScreen1 = () => {
@@ -6,27 +6,50 @@ const GameScreen1 = () => {
     const obj2 = { eng: "good morning", jap: "konichiwa" };
 
     const [currentObjectIndex, setCurrentObjectIndex] = useState(0); // State to track the index of the current object
+    const [visibleButtons, setVisibleButtons] = useState([true, true]);
 
-    const handlePress = () => {
-        setCurrentObjectIndex(prevIndex => (prevIndex + 1) % objects.length); // Update the index to the next object
+
+
+    const handlePress = (index, japValue) => {
+
+        // console.log(visibleButtons);
+        if (japValue === objects[currentObjectIndex].jap) {
+            setVisibleButtons(prevState => {
+                const newState = [...prevState];
+                newState[index] = false; // Hide the clicked button
+                console.log(newState);
+                return newState;
+            });
+            console.log(visibleButtons);
+            setCurrentObjectIndex(prevIndex => (prevIndex + 1) % objects.length); // Update the index to the next object
+
+
+            const allButtonsHidden = visibleButtons.every(visible => !visible);
+            if (allButtonsHidden) {
+                Alert.alert("Process successful");
+            }
+
+        }
+
     };
+
     const objects = [obj1, obj2];
+
     return (
-        <View className="flex">
+        <View className="flex-1 justify-center items-center">
             {objects.map((obj, index) => (
-                <TouchableOpacity key={index} onPress={() => console.log(obj.eng)}>
-                    <Text className="border ">{obj.eng}</Text>
-                </TouchableOpacity>
-
-
-
+                visibleButtons[index] && (
+                    <TouchableOpacity className="w-1/3" key={index} onPress={() => handlePress(index, obj.jap)}>
+                        <Text className="border text-center ">{obj.eng}</Text>
+                    </TouchableOpacity>
+                )
             ))}
 
-            <View className="">
-                <TouchableOpacity onPress={handlePress}>
-                    <Text className="border">{objects[currentObjectIndex].jap}</Text>
+            <View className="w-1/3 mt-16">
+                <TouchableOpacity className="" onPress={() => setCurrentObjectIndex(prevIndex => (prevIndex + 1) % objects.length)}>
+                    <Text className="border text-center">{objects[currentObjectIndex].jap}</Text>
                 </TouchableOpacity>
-                </View>
+            </View>
         </View>
     )
 }
