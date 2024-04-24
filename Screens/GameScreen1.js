@@ -1,54 +1,43 @@
+import React, { useState } from 'react';
 import { View, Text, TouchableOpacity, Alert } from 'react-native';
-import React, { useState } from 'react'
 
-const GameScreen1 = () => {
-    const obj1 = { eng: "hello", jap: "moshi" };
-    const obj2 = { eng: "good morning", jap: "konichiwa" };
+const GameScreen1 = ({ route }) => {
+    const { content } = route.params;
 
-    const [currentObjectIndex, setCurrentObjectIndex] = useState(0); // State to track the index of the current object
-    const [visibleButtons, setVisibleButtons] = useState([true, true]);
+    const [currentObjectIndex, setCurrentObjectIndex] = useState(0);
+    const [visibleButtons, setVisibleButtons] = useState(new Array(content.length).fill(true));
 
-
-
-    const handlePress = (index, japValue) => {
-
-        // console.log(visibleButtons);
-        if (japValue === objects[currentObjectIndex].jap) {
+    const handlePress = (index, spanishValue) => {
+        if (spanishValue === content[currentObjectIndex].spanish) {
             setVisibleButtons(prevState => {
                 const newState = [...prevState];
-                newState[index] = false; // Hide the clicked button
-                const allHidden = newState.every(visible => !visible); // Check if all buttons are hidden
+                newState[index] = false;
+                const allHidden = newState.every(visible => !visible);
                 if (allHidden) {
                     Alert.alert("Process successful");
                 }
                 return newState;
             });
-            console.log(visibleButtons);
-            setCurrentObjectIndex(prevIndex => (prevIndex + 1) % objects.length); // Update the index to the next object
-
+            setCurrentObjectIndex(prevIndex => (prevIndex + 1) % content.length);
         }
-
     };
-
-    const objects = [obj1, obj2];
 
     return (
         <View className="flex-1 justify-center items-center">
-            {objects.map((obj, index) => (
+            {content.map((item, index) => (
                 visibleButtons[index] && (
-                    <TouchableOpacity className="w-1/3" key={index} onPress={() => handlePress(index, obj.jap)}>
-                        <Text className="border text-center ">{obj.eng}</Text>
+                    <TouchableOpacity className="w-1/3" key={index} onPress={() => handlePress(index, item.spanish)}>
+                        <Text className="border text-center ">{item.english}</Text>
                     </TouchableOpacity>
                 )
             ))}
-
             <View className="w-1/3 mt-16">
-                <TouchableOpacity className="" onPress={() => setCurrentObjectIndex(prevIndex => (prevIndex + 1) % objects.length)}>
-                    <Text className="border text-center">{objects[currentObjectIndex].jap}</Text>
+                <TouchableOpacity className="" onPress={() => setCurrentObjectIndex(prevIndex => (prevIndex + 1) % content.length)}>
+                    <Text className="border text-center">{content[currentObjectIndex].spanish}</Text>
                 </TouchableOpacity>
             </View>
         </View>
-    )
+    );
 }
 
-export default GameScreen1
+export default GameScreen1;

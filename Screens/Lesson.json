@@ -2,62 +2,85 @@
   {
     "id": 1,
     "number": 1,
-    "name": "Greetings",
-    "icon": "texting",
-    "content": ["Hello", "How are you?", "I am fine."]
+    "name": "Additional Content",
+    "icon": "star",
+    "content": [
+      {"english": "hello", "spanish": "Hola"},
+      {"english": "good morning", "spanish": "Buenos días"},
+      {"english": "sorry", "spanish": "Lo siento"},
+      {"english": "thank you", "spanish": "Gracias"}
+    ]
   },
   {
     "id": 2,
     "number": 2,
-    "name": "Introduction",
-    "icon": "handshake",
-    "content": ["Name", "Age", "Occupation"]
+    "name": "Greeting Phrases",
+    "icon": "star",
+    "content": [
+      {"english": "goodbye", "spanish": "Adiós"},
+      {"english": "please", "spanish": "Por favor"},
+      {"english": "excuse me", "spanish": "Con permiso"},
+      {"english": "you're welcome", "spanish": "De nada"}
+    ]
   },
   {
     "id": 3,
     "number": 3,
-    "name": "Basic Conversation",
-    "icon": "conversation",
+    "name": "Common Expressions",
+    "icon": "star",
     "content": [
-      "Where are you from?",
-      "What do you like to do?",
-      "Do you have any hobbies?"
+      {"english": "how are you?", "spanish": "¿Cómo estás?"},
+      {"english": "I'm fine", "spanish": "Estoy bien"},
+      {"english": "what's your name?", "spanish": "¿Cómo te llamas?"},
+      {"english": "my name is...", "spanish": "Me llamo..."}
     ]
   },
   {
     "id": 4,
     "number": 4,
     "name": "Numbers",
-    "icon": "calculator",
-    "content": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]
+    "icon": "star",
+    "content": [
+      {"english": "one", "spanish": "uno"},
+      {"english": "two", "spanish": "dos"},
+      {"english": "three", "spanish": "tres"},
+      {"english": "four", "spanish": "cuatro"}
+    ]
   },
   {
     "id": 5,
     "number": 5,
     "name": "Colors",
-    "icon": "palette",
-    "content": ["Red", "Blue", "Green", "Yellow", "Orange", "Purple"]
+    "icon": "star",
+    "content": [
+      {"english": "red", "spanish": "rojo"},
+      {"english": "blue", "spanish": "azul"},
+      {"english": "green", "spanish": "verde"},
+      {"english": "yellow", "spanish": "amarillo"}
+    ]
   },
   {
     "id": 6,
     "number": 6,
-    "name": "Days of the Week",
-    "icon": "calendar",
+    "name": "Family Members",
+    "icon": "star",
     "content": [
-      "Monday",
-      "Tuesday",
-      "Wednesday",
-      "Thursday",
-      "Friday",
-      "Saturday",
-      "Sunday"
+      {"english": "father", "spanish": "padre"},
+      {"english": "mother", "spanish": "madre"},
+      {"english": "brother", "spanish": "hermano"},
+      {"english": "sister", "spanish": "hermana"}
     ]
   },
   {
-    "id": 7,
+    "id": 7, 
     "number": 7,
-    "name": "Weather",
-    "icon": "sun",
-    "content": ["Sunny", "Cloudy", "Rainy", "Windy", "Snowy"]
+    "name": "Days of the Week",
+    "icon": "star",
+    "content": [
+      {"english": "Monday", "spanish": "lunes"},
+      {"english": "Tuesday", "spanish": "martes"},
+      {"english": "Wednesday", "spanish": "miércoles"},
+      {"english": "Thursday", "spanish": "jueves"}
+    ]
   }
 ]
