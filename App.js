@@ -8,6 +8,7 @@ import ConversationListScreen from './Screens/ConversationListScreen'
 import LearningPath from './Screens/LearningPath'
 import GameScreen1 from './Screens/GameScreen1'
 import Game_navigation from './Navigation/Game_navigation'
+import GameScreen2 from './Screens/ScreenForLesson/GameScreen2'
 
 const App = () => {
   return (
@@ -16,7 +17,7 @@ const App = () => {
     // <GameScreen1></GameScreen1>
     <Game_navigation></Game_navigation>
     // <ConversationScreen></ConversationScreen>
-
+    //<GameScreen2></GameScreen2> 
     // <ConversationListScreen></ConversationListScreen>
 
     // <ConversationListScreen></ConversationListScreen>

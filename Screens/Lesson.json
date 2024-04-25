@@ -2,86 +2,94 @@
   {
     "id": 1,
     "number": 1,
-    "name": "Additional Content",
-    "icon": "star",
+    "name": "Greetings",
+    "icon": "texting",
     "content": [
-      {"english": "hello", "spanish": "Hola"},
-      {"english": "good morning", "spanish": "Buenos días"},
-      {"english": "sorry", "spanish": "Lo siento"},
-      {"english": "thank you", "spanish": "Gracias"},
-      {"english":"coffee?" ,"spanish":"café?"}
+      { "english": "Hello", "spanish": "Hola", "question": "What's a common greeting in Spanish?" },
+      { "english": "How are you?", "spanish": "¿Cómo estás?", "question": "How do you ask someone about their well-being?" },
+      { "english": "I am fine.", "spanish": "Estoy bien.", "question": "How do you respond when someone asks about your well-being?" }
     ]
   },
   {
     "id": 2,
     "number": 2,
-    "name": "Greeting Phrases",
-    "icon": "star",
+    "name": "Introduction",
+    "icon": "handshake",
     "content": [
-      {"english": "goodbye", "spanish": "Adiós"},
-      {"english": "please", "spanish": "Por favor"},
-      {"english": "excuse me", "spanish": "Con permiso"},
-      {"english": "you're welcome", "spanish": "De nada"}
+      { "english": "Name", "spanish": "Nombre", "question": "What do you call the identification of a person?" },
+      { "english": "Age", "spanish": "Edad", "question": "What is the term for how many years someone has lived?" },
+      { "english": "Occupation", "spanish": "Ocupación", "question": "What is someone's job or profession called?" }
     ]
   },
   {
     "id": 3,
     "number": 3,
-    "name": "Common Expressions",
-    "icon": "star",
+    "name": "Basic Conversation",
+    "icon": "conversation",
     "content": [
-      {"english": "how are you?", "spanish": "¿Cómo estás?"},
-      {"english": "I'm fine", "spanish": "Estoy bien"},
-      {"english": "what's your name?", "spanish": "¿Cómo te llamas?"},
-      {"english": "my name is...", "spanish": "Me llamo..."}
+      { "english": "Where are you from?", "spanish": "¿De dónde eres?", "question": "How do you ask someone about their place of origin?" },
+      { "english": "What do you like to do?", "spanish": "¿Qué te gusta hacer?", "question": "How do you ask someone about their hobbies?" },
+      { "english": "Do you have any hobbies?", "spanish": "¿Tienes algún pasatiempo?", "question": "How do you inquire if someone has any hobbies?" }
     ]
   },
   {
     "id": 4,
     "number": 4,
     "name": "Numbers",
-    "icon": "star",
+    "icon": "calculator",
     "content": [
-      {"english": "one", "spanish": "uno"},
-      {"english": "two", "spanish": "dos"},
-      {"english": "three", "spanish": "tres"},
-      {"english": "four", "spanish": "cuatro"}
+      { "english": "One", "spanish": "Uno", "question": "What is the Spanish word for the number 1?" },
+      { "english": "Two", "spanish": "Dos", "question": "What is the Spanish word for the number 2?" },
+      { "english": "Three", "spanish": "Tres", "question": "What is the Spanish word for the number 3?" },
+      { "english": "Four", "spanish": "Cuatro", "question": "What is the Spanish word for the number 4?" },
+      { "english": "Five", "spanish": "Cinco", "question": "What is the Spanish word for the number 5?" },
+      { "english": "Six", "spanish": "Seis", "question": "What is the Spanish word for the number 6?" },
+      { "english": "Seven", "spanish": "Siete", "question": "What is the Spanish word for the number 7?" },
+      { "english": "Eight", "spanish": "Ocho", "question": "What is the Spanish word for the number 8?" },
+      { "english": "Nine", "spanish": "Nueve", "question": "What is the Spanish word for the number 9?" },
+      { "english": "Ten", "spanish": "Diez", "question": "What is the Spanish word for the number 10?" }
     ]
   },
   {
     "id": 5,
     "number": 5,
     "name": "Colors",
-    "icon": "star",
+    "icon": "palette",
     "content": [
-      {"english": "red", "spanish": "rojo"},
-      {"english": "blue", "spanish": "azul"},
-      {"english": "green", "spanish": "verde"},
-      {"english": "yellow", "spanish": "amarillo"}
+      { "english": "Red", "spanish": "Rojo", "question": "What is the Spanish word for the color red?" },
+      { "english": "Blue", "spanish": "Azul", "question": "What is the Spanish word for the color blue?" },
+      { "english": "Green", "spanish": "Verde", "question": "What is the Spanish word for the color green?" },
+      { "english": "Yellow", "spanish": "Amarillo", "question": "What is the Spanish word for the color yellow?" },
+      { "english": "Orange", "spanish": "Naranja", "question": "What is the Spanish word for the color orange?" },
+      { "english": "Purple", "spanish": "Morado", "question": "What is the Spanish word for the color purple?" }
     ]
   },
   {
     "id": 6,
     "number": 6,
-    "name": "Family Members",
-    "icon": "star",
+    "name": "Days of the Week",
+    "icon": "calendar",
     "content": [
-      {"english": "father", "spanish": "padre"},
-      {"english": "mother", "spanish": "madre"},
-      {"english": "brother", "spanish": "hermano"},
-      {"english": "sister", "spanish": "hermana"}
+      { "english": "Monday", "spanish": "Lunes", "question": "What is the first day of the week in Spanish?" },
+      { "english": "Tuesday", "spanish": "Martes", "question": "What is the second day of the week in Spanish?" },
+      { "english": "Wednesday", "spanish": "Miércoles", "question": "What is the third day of the week in Spanish?" },
+      { "english": "Thursday", "spanish": "Jueves", "question": "What is the fourth day of the week in Spanish?" },
+      { "english": "Friday", "spanish": "Viernes", "question": "What is the fifth day of the week in Spanish?" },
+      { "english": "Saturday", "spanish": "Sábado", "question": "What is the sixth day of the week in Spanish?" },
+      { "english": "Sunday", "spanish": "Domingo", "question": "What is the last day of the week in Spanish?" }
     ]
   },
   {
-    "id": 7, 
+    "id": 7,
     "number": 7,
-    "name": "Days of the Week",
-    "icon": "star",
+    "name": "Weather",
+    "icon": "sun",
     "content": [
-      {"english": "Monday", "spanish": "lunes"},
-      {"english": "Tuesday", "spanish": "martes"},
-      {"english": "Wednesday", "spanish": "miércoles"},
-      {"english": "Thursday", "spanish": "jueves"}
+      { "english": "Sunny", "spanish": "Soleado", "question": "What is the Spanish word for a bright and clear day?" },
+      { "english": "Cloudy", "spanish": "Nublado", "question": "What is the Spanish word for a sky filled with clouds?" },
+      { "english": "Rainy", "spanish": "Lluvioso", "question": "What is the Spanish word for a day with rain?" },
+      { "english": "Windy", "spanish": "Ventoso", "question": "What is the Spanish word for a day with strong winds?" },
+      { "english": "Snowy", "spanish": "Neviscoso", "question": "What is the Spanish word for a day with snow?" }
     ]
   }
 ]
