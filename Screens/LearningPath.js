@@ -2,7 +2,7 @@ import { View, Text, Image, ScrollView, TextInput, TouchableOpacity, Button } fr
 
 import React, { useEffect, useState } from 'react'
 import lessonData from './Lesson.json';
-import LessonsScreen from './LessonsScreen';
+
 import { useNavigation } from '@react-navigation/native';
 
 const LearningPath = () => {

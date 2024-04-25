@@ -8,7 +8,8 @@
       {"english": "hello", "spanish": "Hola"},
       {"english": "good morning", "spanish": "Buenos días"},
       {"english": "sorry", "spanish": "Lo siento"},
-      {"english": "thank you", "spanish": "Gracias"}
+      {"english": "thank you", "spanish": "Gracias"},
+      {"english":"coffee?" ,"spanish":"café?"}
     ]
   },
   {
