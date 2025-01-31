@@ -41,9 +41,11 @@ Follow these steps to run the app locally:
    npx react-native run-android
    ```
 
-
-
 # System Architecture
+
+Sequence diagrams show the flow of interactions between users and the Vocaverse platform for specific scenarios.
+
+![Sequence Diagram]
 
 # How to run 
 
