@@ -45,7 +45,7 @@ Follow these steps to run the app locally:
 
 Sequence diagrams show the flow of interactions between users and the Vocaverse platform for specific scenarios.
 
-![Sequence Diagram](Images/final sequence diagram.jpg)
+![Sequence Diagram](https://github.com/alrayhan587/VocaVerse-Language-Learning-app/blob/main/Images/final%20sequence%20diagram.jpg?raw=true)
 
 # How to run 
 
