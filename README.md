@@ -45,7 +45,7 @@ Follow these steps to run the app locally:
 
 Sequence diagrams show the flow of interactions between users and the Vocaverse platform for specific scenarios.
 
-![Sequence Diagram]
+![Sequence Diagram](Images/final sequence diagram.jpg)
 
 # How to run 
 
