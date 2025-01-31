@@ -47,13 +47,10 @@ Sequence diagrams show the flow of interactions between users and the Vocaverse 
 
 ![Sequence Diagram](https://github.com/alrayhan587/VocaVerse-Language-Learning-app/blob/main/Images/final%20sequence%20diagram.jpg?raw=true)
 
-
 ## User Journey
 When the user launches the app, they are greeted with the login screen.
 
-![Log in Screen](https://github.com/alrayhan587/VocaVerse-Language-Learning-app/blob/main/Images/LoginScreen.png?raw=true)
-
-<img src="https://github.com/alrayhan587/VocaVerse-Language-Learning-app/blob/main/Images/LoginScreen.png?raw=true" width="100">
+<img src="https://github.com/alrayhan587/VocaVerse-Language-Learning-app/blob/main/Images/LoginScreen.png?raw=true" width="500">
 
 ### 🔹 Home Screen
 After logging in, users arrive at the main screen where they can:
@@ -61,27 +58,27 @@ After logging in, users arrive at the main screen where they can:
 2. Check and update profile information.
 3. Navigate through different sections using the bottom navigation.
 
-![Posting Screen](https://github.com/alrayhan587/VocaVerse-Language-Learning-app/blob/main/Images/PostingScreen.png?raw=true)
+<img src="https://github.com/alrayhan587/VocaVerse-Language-Learning-app/blob/main/Images/PostingScreen.png?raw=true" width="500">
 
 ### 🔹 AI Chatbot
 Users can engage in conversations with **Gemini (v1.5)** for informal language practice.
 
-![ChatBot Screen](https://github.com/alrayhan587/VocaVerse-Language-Learning-app/blob/main/Images/ChatBotScreen.png?raw=true)
+<img src="https://github.com/alrayhan587/VocaVerse-Language-Learning-app/blob/main/Images/ChatBotScreen.png?raw=true" width="500">
 
 ### 🔹 Gamified Learning
 Users can play interactive vocabulary-learning games. They can select a lesson, which takes them to an engaging learning session.
 
-![Learning Block Screen](https://github.com/alrayhan587/VocaVerse-Language-Learning-app/blob/main/Images/LessonScreen.png?raw=true)
+<img src="https://github.com/alrayhan587/VocaVerse-Language-Learning-app/blob/main/Images/LessonScreen.png?raw=true" width="500">
 
 There are **six gamified screens** designed for a fun and effective learning experience.
 
-![Gamefied Screen](https://github.com/alrayhan587/VocaVerse-Language-Learning-app/blob/main/Images/GameScreen1.png?raw=true)
+<img src="https://github.com/alrayhan587/VocaVerse-Language-Learning-app/blob/main/Images/GameScreen1.png?raw=true" width="500">
 
 ### 🔹 Video-Based Learning
 Users can watch **language-specific videos** to improve their listening and comprehension skills.
 
-![Youtube Integrated Screen](https://github.com/alrayhan587/VocaVerse-Language-Learning-app/blob/main/Images/VideoScreen.png?raw=true)
- 
+<img src="https://github.com/alrayhan587/VocaVerse-Language-Learning-app/blob/main/Images/VideoScreen.png?raw=true" width="500">
+
 
 # How to run 
 
