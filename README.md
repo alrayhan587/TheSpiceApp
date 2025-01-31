@@ -53,6 +53,8 @@ When the user launches the app, they are greeted with the login screen.
 
 ![Log in Screen](https://github.com/alrayhan587/VocaVerse-Language-Learning-app/blob/main/Images/LoginScreen.png?raw=true)
 
+<img src="https://github.com/alrayhan587/VocaVerse-Language-Learning-app/blob/main/Images/LoginScreen.png?raw=true" width="100">
+
 ### 🔹 Home Screen
 After logging in, users arrive at the main screen where they can:
 1. Change their preferred language.
