@@ -46,14 +46,22 @@ Follow these steps to run the app locally:
 Sequence diagrams show the flow of interactions between users and the Vocaverse platform for specific scenarios.
 
 ![Sequence Diagram](https://github.com/alrayhan587/VocaVerse-Language-Learning-app/blob/main/Images/final%20sequence%20diagram.jpg?raw=true)
-
 ## User Journey
 When the user launches the app, they are greeted with the login screen.
 
 <p align="center">
-  <img src="https://github.com/alrayhan587/VocaVerse-Language-Learning-app/blob/main/Images/LoginScreen.png?raw=true" width="200">
-  <img src="https://github.com/alrayhan587/VocaVerse-Language-Learning-app/blob/main/Images/PostingScreen.png?raw=true" width="200">
-  <img src="https://github.com/alrayhan587/VocaVerse-Language-Learning-app/blob/main/Images/ChatBotScreen.png?raw=true" width="200">
+  <figure>
+    <img src="https://github.com/alrayhan587/VocaVerse-Language-Learning-app/blob/main/Images/LoginScreen.png?raw=true" width="200" style="margin: 10px;">
+    <figcaption align="center">Login Screen</figcaption>
+  </figure>
+  <figure>
+    <img src="https://github.com/alrayhan587/VocaVerse-Language-Learning-app/blob/main/Images/PostingScreen.png?raw=true" width="200" style="margin: 10px;">
+    <figcaption align="center">Home Screen</figcaption>
+  </figure>
+  <figure>
+    <img src="https://github.com/alrayhan587/VocaVerse-Language-Learning-app/blob/main/Images/ChatBotScreen.png?raw=true" width="200" style="margin: 10px;">
+    <figcaption align="center">AI Chatbot</figcaption>
+  </figure>
 </p>
 
 ### 🔹 Home Screen
@@ -63,9 +71,18 @@ After logging in, users arrive at the main screen where they can:
 3. Navigate through different sections using the bottom navigation.
 
 <p align="center">
-  <img src="https://github.com/alrayhan587/VocaVerse-Language-Learning-app/blob/main/Images/LessonScreen.png?raw=true" width="200">
-  <img src="https://github.com/alrayhan587/VocaVerse-Language-Learning-app/blob/main/Images/GameScreen1.png?raw=true" width="200">
-  <img src="https://github.com/alrayhan587/VocaVerse-Language-Learning-app/blob/main/Images/VideoScreen.png?raw=true" width="200">
+  <figure>
+    <img src="https://github.com/alrayhan587/VocaVerse-Language-Learning-app/blob/main/Images/LessonScreen.png?raw=true" width="200" style="margin: 10px;">
+    <figcaption align="center">Learning Block</figcaption>
+  </figure>
+  <figure>
+    <img src="https://github.com/alrayhan587/VocaVerse-Language-Learning-app/blob/main/Images/GameScreen1.png?raw=true" width="200" style="margin: 10px;">
+    <figcaption align="center">Gamified Learning</figcaption>
+  </figure>
+  <figure>
+    <img src="https://github.com/alrayhan587/VocaVerse-Language-Learning-app/blob/main/Images/VideoScreen.png?raw=true" width="200" style="margin: 10px;">
+    <figcaption align="center">Video-Based Learning</figcaption>
+  </figure>
 </p>
 
 ### 🔹 AI Chatbot
@@ -78,7 +95,6 @@ There are **six gamified screens** designed for a fun and effective learning exp
 
 ### 🔹 Video-Based Learning
 Users can watch **language-specific videos** to improve their listening and comprehension skills.
-
 # How to run 
 
 ## Step 1: Start the Metro Server
